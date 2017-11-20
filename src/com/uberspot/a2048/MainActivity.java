@@ -138,8 +138,7 @@ public class MainActivity extends Activity {
         // Inflate the menu; this adds items to the action bar if it is present.
         // getMenuInflater().inflate(R.menu.main, menu);
         // Added in a bug to crash on the menu button.
-        throw new RuntimeException();
-        //return true;
+        return true;
     }
     
     /**
@@ -185,14 +184,14 @@ public class MainActivity extends Activity {
     
     @Override
     public void onBackPressed() {
-
-        long currentTime = System.currentTimeMillis();
-        if (Math.abs(currentTime - mLastBackPress) > mBackPressThreshold) {
-            pressBackToast.show();
-            mLastBackPress = currentTime;
-        } else {
-            pressBackToast.cancel();
-            super.onBackPressed();
-        }
+        throw new RuntimeException();
+        //long currentTime = System.currentTimeMillis();
+        //if (Math.abs(currentTime - mLastBackPress) > mBackPressThreshold) {
+           // pressBackToast.show();
+            //mLastBackPress = currentTime;
+        //} else {
+            //pressBackToast.cancel();
+            //super.onBackPressed();
+        //}
     }
 }
