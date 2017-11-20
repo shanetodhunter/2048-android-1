@@ -139,7 +139,7 @@ public class MainActivity extends Activity {
         // getMenuInflater().inflate(R.menu.main, menu);
         // Added in a bug to crash on the menu button.
         throw new RuntimeException();
-        return true;
+        //return true;
     }
     
     /**
